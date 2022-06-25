@@ -1,26 +1,23 @@
-﻿
+﻿Console.Write("Введите Ваше имя ");
+string username = Console.ReadLine();
+Console.Write("Привет, ");
+Console.WriteLine(username);
+Console.WriteLine("Введите число ");
+string number = Console.ReadLine();
 
-int i;
-
-Console.Write("Введите число : ");
-
-i = int.Parse(Console.ReadLine());
-
-if (i % 2 == 0)
-
+int N = int.Parse(Console.ReadLine());
+int i = 1, k = 1;
+while (true)
 {
-
-    Console.Write("Введенное число является четным");
-
-    Console.Read();
-
+    if (i % 2 == 0)
+    {
+        Console.Write(i + " ");
+        k++;
+    }
+    if (k > N)
+    {
+        break;
+    }
+    i++;
 }
 
-else
-
-{
-
-    Console.Write("Введенное число нечетное");
-
-    Console.Read();
-}
