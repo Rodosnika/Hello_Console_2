@@ -1,12 +1,18 @@
-﻿int a = 22;
-int b = 3;
-int c = 9;
+﻿int a;
+Console.WriteLine("введите число: ");
+a = Convert.ToInt32(Console.ReadLine());
 
-int max = a;
+if (a % 2 == 0)
+{
+    Console.WriteLine("четное число");
 
-if (a > max) max = a;
-if (b > max) max = b;
-if (c > max) max = c;
+}
+else
+{
+    Console.WriteLine("нечетное");
+}
 
-Console.Write("max= ");
-Console.WriteLine(max);
+
+
+Console.ReadKey();
+   
