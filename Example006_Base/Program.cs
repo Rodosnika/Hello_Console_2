@@ -1,18 +1,26 @@
-﻿int a;
-Console.WriteLine("введите число: ");
-a = Convert.ToInt32(Console.ReadLine());
+﻿
 
-if (a % 2 == 0)
+int i;
+
+Console.Write("Введите число : ");
+
+i = int.Parse(Console.ReadLine());
+
+if (i % 2 == 0)
+
 {
-    Console.WriteLine("четное число");
+
+    Console.Write("Введенное число является четным");
+
+    Console.Read();
 
 }
+
 else
+
 {
-    Console.WriteLine("нечетное");
+
+    Console.Write("Введенное число нечетное");
+
+    Console.Read();
 }
-
-
-
-Console.ReadKey();
-   
